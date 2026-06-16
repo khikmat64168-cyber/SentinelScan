@@ -7,6 +7,11 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2022,
     sourceType: 'module',
+    // Auto-detects the nearest tsconfig.json per linted file — required by
+    // type-aware rules like no-floating-promises across the monorepo's
+    // multiple workspace tsconfigs.
+    project: true,
+    tsconfigRootDir: __dirname,
   },
   plugins: ['@typescript-eslint', 'security'],
   extends: [

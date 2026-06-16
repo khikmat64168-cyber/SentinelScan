@@ -6,7 +6,7 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "baseUrl": ".",
-    "types": ["node"],
+    "types": ["node", "jest"],
     "paths": {
       "@domain/*": ["src/domain/*"],
       "@application/*": ["src/application/*"],

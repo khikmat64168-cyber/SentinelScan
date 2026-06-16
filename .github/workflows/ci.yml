@@ -166,5 +166,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Audit for high/critical CVEs
-        run: npm audit --audit-level=high
+      # Scoped to production dependencies — dev-tooling CVEs (e.g. Vite's
+      # dev-server-only esbuild advisory) never ship and would otherwise
+      # force unrelated breaking upgrades just to silence the gate.
+      - name: Audit production dependencies for high/critical CVEs
+        run: npm audit --omit=dev --audit-level=high

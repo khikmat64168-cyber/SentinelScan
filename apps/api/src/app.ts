@@ -1,5 +1,6 @@
 import 'reflect-metadata';
-import express, { Application, Request, Response } from 'express';
+import express from 'express';
+import type { Application, Request, Response } from 'express';
 
 export function createApp(): Application {
   const app = express();
