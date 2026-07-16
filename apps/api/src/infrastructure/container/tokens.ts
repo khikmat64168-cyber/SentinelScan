@@ -8,4 +8,5 @@ export const TOKENS = {
   FindingRepository:  Symbol('FindingRepository'),
   ReportRepository:   Symbol('ReportRepository'),
   AuditLogRepository: Symbol('AuditLogRepository'),
+  AuthService:        Symbol('AuthService'),
 } as const;
