@@ -7,6 +7,7 @@ export { RefreshTokenUseCase } from './auth/RefreshTokenUseCase';
 export { CreateProjectUseCase } from './project/CreateProjectUseCase';
 export { GetProjectUseCase } from './project/GetProjectUseCase';
 export { ListProjectsUseCase } from './project/ListProjectsUseCase';
+export { UpdateProjectUseCase } from './project/UpdateProjectUseCase';
 export { ArchiveProjectUseCase } from './project/ArchiveProjectUseCase';
 
 export { CreateTargetUseCase } from './target/CreateTargetUseCase';
