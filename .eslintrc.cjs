@@ -25,6 +25,10 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'warn',
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      { checksVoidReturn: { arguments: false, returns: false } },
+    ],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     '@typescript-eslint/no-import-type-side-effects': 'error',
 
